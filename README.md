@@ -71,10 +71,13 @@ GitHub: [prashant-chauhan449](https://github.com/prashant-chauhan449)
 ## Screenshots
 
 ### Main Menu
-![Main Menu](screenshots/main-menu.png)
+![Main Menu](screenshots/MenuPage.png)
 
-### Add Student
-![Add Student](screenshots/add-student.png)
+### Admin - Add Student
+![Add Student](screenshots/Addstudent.png)
 
 ### Display Students
-![Display Students](screenshots/display-students.png)
+![Display Students](screenshots/DisplayStudent.png)
+
+### User Login
+![User Login](screenshots/UserLogin.png)
