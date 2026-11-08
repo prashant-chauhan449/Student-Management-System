@@ -27,7 +27,7 @@ void adminlogin(void){
     if(choice<1 || choice>6){
         printf("Enter number between 1 to 6");
     }
-    }while(choice<1 || choice>);
+    }while(choice<1 || choice>6);
     switch(choice){
         case 1:
         printf("Add Student Selected\n");
@@ -81,7 +81,7 @@ void addstudent(void){
 
     // Personal Details
     printf("\n--- PERSONAL DETAILS ---\n");
-    int duplicate;
+    int duplicate,i;
     do{
         duplicate = 0;
     printf("Enter Student ID: \n");
@@ -92,6 +92,7 @@ void addstudent(void){
             printf("This id already exist! Use another\n");
             break;
         }
+    }
     }while(duplicate == 1);
 
     printf("Enter Student Name: \n");
@@ -111,10 +112,10 @@ void addstudent(void){
     printf("Enter Gender (M/F): \n");
     scanf(" %c", &students[countstudent].gender);
 
-    if(students[countstudent].gender!='M' || students[countstudent].gender!='F'){
+    if(students[countstudent].gender!='M' && students[countstudent].gender!='F'){
         printf("Invalid Gender! Try Again\n");
     }
-    }while(students[countstudent].gender!='M' || students[countstudent].gender!='F');
+    }while(students[countstudent].gender!='M' && students[countstudent].gender!='F');
 
     // Contact Details
     printf("\n--- CONTACT DETAILS ---\n");
@@ -129,7 +130,7 @@ void addstudent(void){
         valid = 0;
     }
 
-    for(i=0;i<strlen(students[countstudent].contact.mobile!='\0';i++){
+    for(i=0;i<strlen(students[countstudent].contact.mobile);i++){
         if(students[countstudent].contact.mobile[i]<'0' || students[countstudent].contact.mobile[i]>'9'){
             valid = 0;
             break;
@@ -153,7 +154,7 @@ void addstudent(void){
     if(students[countstudent].academic.semester<0 || students[countstudent].academic.semester>8){
          printf("Invalid Semester! Try Again\n");
     }
-    }while (students[countstudent].academic.semester<0 || students[countstudent].academic.semester>8)
+    }while (students[countstudent].academic.semester<0 || students[countstudent].academic.semester>8);
     
     do{
     printf("Enter CGPA: \n");
@@ -162,7 +163,7 @@ void addstudent(void){
     if(students[countstudent].academic.cgpa<0 || students[countstudent].academic.cgpa>10){
         printf("Invalid Cgpa! Try Again\n");
     }
-    }while(students[countstudent].academic.cgpa<0 || students[countstudent].academic.cgpa>10)
+    }while(students[countstudent].academic.cgpa<0 || students[countstudent].academic.cgpa>10);
 
     countstudent++;
     saveStudents();
