@@ -53,15 +53,19 @@ Student records are stored in a binary file named `students.dat`, allowing data 
 
 ## Project Structure
 
-```text
 Student-Management-System/
 │
 ├── main.c
 ├── student.c
 ├── student.h
 ├── README.md
-└── .gitignore
-```
+├── LICENSE
+├── .gitignore
+└── screenshots/
+    ├── MenuPage.png
+    ├── Addstudent.png
+    ├── DisplayStudent.png
+    └── UserLogin.png
 
 ## Author
 
