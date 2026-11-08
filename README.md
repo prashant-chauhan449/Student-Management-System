@@ -68,3 +68,13 @@ Student-Management-System/
 **Prashant Chauhan**
 
 GitHub: [prashant-chauhan449](https://github.com/prashant-chauhan449)
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/main-menu.png)
+
+### Add Student
+![Add Student](screenshots/add-student.png)
+
+### Display Students
+![Display Students](screenshots/display-students.png)
